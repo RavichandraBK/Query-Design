@@ -1,0 +1,255 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+    background-color: #f0f0f0;
+}
+header{
+    background-color: #f0f0f0;
+    /* padding: 10px 20px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.top{
+    background-color: #fff;
+    padding: 10px 20px;
+    width: 300px;
+    height: auto;
+    margin-top: 10px;
+    
+}
+.top>div>img{
+    width: 100px;
+    height: auto;
+}
+.query-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.query-box{
+    width: 258px;
+    height: 77px;
+    
+    padding :15px 25px 15px 15px;
+    border: 2px solid rgba(220, 220, 220, 1);
+    background-color: rgba(255, 255, 255, 1);
+    margin-top: 25px;
+    
+    
+}
+.query-sel{
+    width: 258px;
+    border: none;
+    height: 20px;
+    color: rgba(165, 169, 170, 1);
+}
+.divider {
+    border-top: 1px solid #ccc; 
+    margin: 20px 0; 
+}
+.query-box-txt{
+    font-family: Inter;
+font-size: 12px;
+font-weight: 400;
+line-height: 14.52px;
+text-align: left;
+}
+.query-box-button{
+    width: 298px;
+    height: 44px;
+    text-align: center;
+    padding: 10p 20p 10p 20;
+    background-color: rgba(245, 70, 27, 1);
+    margin-top: 20px;
+    color: white;
+    border: none;
+
+    font-family: Inter;
+font-size: 14px;
+font-weight: 500;
+line-height: 23.8px;
+text-align: center;
+
+}
+.query-box-button>span{
+   font-size: 1.2em;
+    margin-left: 10px;
+}
+
+.query-hist{
+    width: 340px;
+    min-height: 800px;
+    background-color: #fff;
+    margin-top: 20px;
+    /* padding: 10px 20px; */
+}
+.query-hist-top{
+
+}
+.query-hist-bottom{
+
+}
+.query-txt-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.hvrTxt{
+    color: red;
+}
+.query-tab-txt{
+    font-family: Inter;
+font-size: 13px;
+font-weight: 500;
+line-height: 1.5;
+text-align: center;
+opacity: 60%;
+
+}
+
+.query-tab-txt {
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 10px;
+    color: black;
+  }
+
+  
+  .query-tab-txt:hover {
+    color: red;
+  }
+
+  .query-tab-txt.active {
+    border-bottom: 2px solid red;
+    color:red;
+  }
+.divider2{
+    border-top: 1px solid #ccc; 
+    /* margin: 5px 0; */
+}
+.query-hist-items{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ align-items: center;
+ 
+}
+.query-hist-box{
+    border: 2px solid rgba(220, 220, 220, 1);
+    width: 288px;
+    border-radius: 10px;
+    height: auto;
+    /* display: flex; */
+    /* justify-content:center; */
+    padding: 0px 5px;
+    margin-top: 20px;
+    position: relative;
+    /* align-items: center; */
+}
+.item-txt{
+    font-family: Inter;
+font-size: 12px;
+font-weight: 400;
+line-height: 0.8;
+text-align: left;
+
+}
+.item-number{
+    border-radius:  100%;;
+    display: flex;
+    width: 26px;
+    height: 26px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(144, 144, 144, 1);
+    /* margin-top: 10px; */
+    font-family: Inter;
+font-size: 10px;
+font-weight: 700;
+line-height: 15.8px;
+text-align: center;
+
+}
+
+.sticks-spinner {
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    background-color: rgba(241, 236, 235, 1);
+    position: absolute;
+    border-radius: 100%;
+    position: absolute;
+    left: 255px;
+    top: 120px;
+  }
+  
+  
+  
+  /* HTML: <div class="loader"></div> */
+.loader {
+    width: 20px;
+    aspect-ratio: 1;
+    display: grid;
+    border-radius: 100%;
+    background:
+    linear-gradient(0deg ,rgba(245 70 27/50%) 30%,#0000 0 70%,rgba(245 70 27/100%) 0) 50%/8% 100%,
+    linear-gradient(90deg,rgba(245 70 27/25%) 30%,#0000 0 70%,rgba(245 70 27/75%) 0) 50%/100% 8%;
+    
+    background-repeat: no-repeat;
+    animation: l23 1s infinite steps(12);
+  }
+  .loader::before,
+  .loader::after {
+     content: "";
+     grid-area: 1/1;
+     border-radius: 50%;
+     background: inherit;
+     opacity: 0.915;
+     transform: rotate(30deg);
+  }
+  .loader::after {
+     opacity: 0.83;
+     transform: rotate(60deg);
+  }
+  @keyframes l23 {
+    100% {transform: rotate(1turn)}
+  }
+
+  .spinner{
+    color: white;
+    background-color: black;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 255px;
+    top: 120px;
+  }
+  
+  .tick-mark {
+    width: 30px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
+    position: relative;
+    top: 15px;
+    left: 250px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray; /* Container background color */
+  }
+  
+  
+  
+  .tick-inner {
+   font-size: 20px;
+   color: green;
+  }
+  
